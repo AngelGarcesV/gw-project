@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing in-GW PARTS</title>
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <!-- FRAMEWORK BOOTSTRAP -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+     
+     <script src="https://kit.fontawesome.com/8bc46edd81.js" crossorigin="anonymous"></script>
+     <link rel="shortcut icon" href="{% static 'recursos/ISOTIPO_Mesa_de_trabajo_1_x50@2x.webp' %}" />
+     {% load static %}
+     <link rel="stylesheet" href="{% static 'css/singin.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+          <a href="/"><img src="{% static 'recursos/332150.svg' %}" height="24" alt=""></a>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mr-auto" style="--bs-scroll-height: 100px;">
+              <li class="user-icon"><a href="#"><i class="fa-solid fa-user text-light" height="30"></i></a></li>
+            </ul>
+            <ul class="nav justify-content-center mr-auto">
+                <li class="nav-item">
+                    <span class="navbar-text"><a class="nav-link active" href="tienda">Bicicletas</a></span>
+                  </li>
+                  <li class="nav-item">
+                    <span class="navbar-text"><a class="nav-link active" href="#">Accesorios</a></span>
+                  </li>
+            </ul>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <span class="navbar-text"><a class="nav-link active" href="../accounts/login/">Iniciar Sesión</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="modal-dialog text-center">
+            <div class="col-sm-8 carta">
+                <div class="modal-content card text-bg-dark mb-3">
+                    <br>
+                    <form class="col-12" method="post">
+                      {% csrf_token %}
+                        <div class="row">
+                            <div class="form-group col">
+                              <input type="text" id="" required placeholder="Nombre" class="form-control" name="first_name">
+                          </div>
+                          <div class="form-group col">
+                            <input type="text" id="" required placeholder="Apellido" class="form-control" name="last_name">
+                          </div>
+                            <br><br><br>
+                            <div class="form-group">
+                              <input type="text" required placeholder="nombre de usuario" class="form-control" name="username">
+                            </div>
+                            <br><br><br>
+                            <div class="form-group">
+                              <input type="email" required placeholder="ejemplo@gmail.com" class="form-control" name="email">
+                            </div>
+                            <br><br><br>
+                              <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Contraseña" name="password1">
+                              </div>
+                              <br><br><br>
+                              <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirmar contraseña" name="password2">
+                              </div>
+                              <br><br><br>
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn">Crear Cuenta</button>
+                              </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </main>
+</body>
+</html>

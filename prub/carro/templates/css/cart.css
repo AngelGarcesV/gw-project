@@ -1,0 +1,68 @@
+.cart-title{
+    margin-top: 4rem;
+}
+.fa-solid:hover{
+    color: cornflowerblue!important;;
+}
+.nav-link:hover{
+    color: cornflowerblue !important;;
+}
+.user-icon{
+    margin-left: 1rem;
+}
+.products{
+    margin-top: 4%;
+}
+.one{
+    border-top: 3px solid;
+    opacity: 100;
+}
+.table-title p{
+    margin-left: 3rem;
+    font-size: 1.25rem;
+}
+.table-title{
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+}
+.prod p{
+    font-size: 1.25rem;  
+
+    vertical-align: 150%;
+    margin-left: 2rem;
+    
+}
+.prod{
+    padding-left: 10%;
+    display:flex;
+    
+}
+.prod img{
+    border:1px solid;
+    border-radius: 5%;
+
+}
+.prod-nom{
+    margin-top:1rem;
+}
+.btn{
+    vertical-align:-4rem;
+    justify-content: start;
+    margin-left: 2rem;
+
+    
+}
+.prod-logo{
+    display: flex;
+    width: 15%;
+}
+.prod-info p{
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-left:3rem;
+    text-align: end;
+}
+.prod-info{
+    display: inline-flex;
+}

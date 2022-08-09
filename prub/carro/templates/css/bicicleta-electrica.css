@@ -1,0 +1,9 @@
+.nav-link:hover{
+    color: cornflowerblue !important;;
+}
+.fa-solid:hover{
+    color: cornflowerblue!important;
+}
+.fa-solid{
+    margin-left: 1rem;
+}
